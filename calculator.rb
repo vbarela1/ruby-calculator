@@ -6,11 +6,11 @@ end
 def first_number     
   puts 'What is the First Number?'
   @first = gets.chomp
-  if @first != '0' && @first.to_i == 0
+  if @first != '0' && @first.to_f == 0
     puts'Invalid Input. Try again.'
     first_number
   else
-    @first = @first.to_i
+    @first = @first.to_f 
     operator 
   end
 end
@@ -30,11 +30,11 @@ end
 def second_number
   puts 'What is the Second Number?' 
   @second = gets.chomp 
-  if @second != '0' && @second.to_i == 0
+  if @second != '0' && @second.to_f == 0
     puts'Invalid Input. Try again.'
     second_number
   else
-    @second = @second.to_i
+    @second = @second.to_f
     result 
   end
 end 
